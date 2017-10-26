@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="{{App.getLocale()}}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    <title>Laravel :: Admin</title>
+
+    <base href="/">
+    <meta name="fragment" content="!">
+
+    <link rel="shortcut icon" href="favicon.ico" />
+
+    <!-- build:js js/vendors.min.js -->
+    <!--<script type="text/javascript" src="js/modernizr.js"></script>-->
+    <!--<script type="text/javascript" src="assets/vendors/detectizr.min.js"></script>-->
+    <!-- endbuild -->
+
+    <link rel="stylesheet" href="{{mix('css/bootstrap.css')}}" />
+    <link rel="stylesheet" href="{{mix('css/admin.css')}}" />
+  </head>
+
+  <body class="skin-blue sidebar-mini" id="{{ bodyID }}">
+
+    <div class="wrapper">{% block body %}{% endblock %}</div>
+
+    <script type="text/javascript" src="{{mix('js/manifest.js')}}"></script>
+    <script type="text/javascript" src="{{mix('js/vendor.js')}}"></script>
+    <script type="text/javascript" src="{{mix('js/admin.js')}}"></script>
+  </body>
+</html>

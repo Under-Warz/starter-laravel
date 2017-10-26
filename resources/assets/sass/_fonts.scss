@@ -1,0 +1,20 @@
+// ------------------------------------------------------------
+// FONTS
+// ------------------------------------------------------------
+
+@mixin font-face($name, $path, $font-weight:'normal', $font-style:'normal') {
+  @font-face {
+    font-family: $name;
+    src: url($path + ".eot");
+    src: url($path + ".eot?#iefix") format("embedded-opentype"),
+         url($path + ".woff") format("woff"),
+         url($path + ".ttf") format("truetype"),
+         url($path + ".svg#"+$name) format("svg");
+    font-style: $font-style;
+    font-weight: $font-weight;
+    text-rendering: optimizeLegibility;
+  }
+}
+
+@import "generated/_icons";
+@import "../vendors/font-awesome.css";

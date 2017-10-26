@@ -1,0 +1,43 @@
+// init
+@import "common";
+@import "~admin-lte/dist/css/AdminLTE.min.css";
+@import "~admin-lte/dist/css/skins/skin-blue.min.css";
+
+// Login
+body#login {
+	background: #222d32;
+
+	.content-wrapper {
+		background: none;
+		margin-left: 0;
+		padding-top: 150px;
+
+		.box {
+			margin-bottom: 0;
+		}
+	}
+}
+
+// Alert
+.alert-container {
+	padding: 15px;
+}
+
+// Pagination
+div.dataTables_wrapper div.dataTables_paginate {
+  margin: 0;
+  white-space: nowrap;
+  text-align: right;
+}
+
+div.dataTables_wrapper div.dataTables_paginate ul.pagination {
+  margin: 2px 0;
+  white-space: nowrap;
+}
+
+// Actions
+td.actions {
+	form {
+		display: inline-block;
+	}
+}
